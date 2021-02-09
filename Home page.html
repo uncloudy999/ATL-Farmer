@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <title>Home</title>
+	  <link rel="stylesheet" href="css/Home page style.css">
+	  <link rel="icon" href="logo.ico">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/Weather  stylesheet.css" />
+   <style>
+      .table tr td img{
+         border-radius: 5px;
+      }
+      .table tr td img:hover{
+        transform: scale(1.05);
+        transition: 0.3s ease;
+       
+
+      } 
+   </style>
+ </head>
+<body>
+  <section id="home">
+	 <div class="nav-bar">
+		 <div class="nav-logo">
+			 <img src="Images/logo.png">
+		 </div>
+		 <div class="nav-links">
+			 <ul>
+				 <a href="#"><li class="active">HOME</li></a>
+       
+				 <a href="Sell Page.html"><li>SELL</li></a>
+         
+				 <a href="Shop page.html"><li>SHOP</li></a>
+        
+			  	<a href="Contact Us.html"><li>CONTACT US</li></a>
+			 </ul>			
+		 </div>
+   </div>
+	 <div class="trending">
+		 <u class="h1underline"><h1>Trending </h1></u>
+	 </div>
+	 <div class="slider">
+		 <figure>
+			 <img src="Images/trending1.jpg">
+			 <img src="Images/trending2.jpg">
+			 <img src="Images/trending3.jpg">
+		  	<img src="Images/trending1.jpg">
+		 </figure>
+	 </div>	
+ </section>
+ <div class="Crop" > 
+   <h1 style="text-align: center; font-size: 50px; font-weight: 500; ">Menu</h1>
+ </div>
+ <div class="table">
+   <Table class="center" cellspacing="50" style="margin-left:auto; margin-right:auto;" >                   
+     <tr>
+       <td>
+         <a href="Sell Page.html"> <img src="Images/Crop sell menu image 2.jpg"width="400px" height="400"></a>
+       </td>
+       <td>
+        <a href="Crop Production and Management.html"><img src="Images/crop production and management menu image 1.jpg" width="400px" height="400"></a> 
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <a href="Shop page.html"><img src="Images/Buy farming products iamge.jpg"width="400px" height="400"></a>
+       </td>
+       <td>
+          <a href="Advertisment.html"><img src="Images/Buy Organic Farm Products.jpg"width="400px" height="400"></a>
+       </td>
+     </tr>                    
+   </Table>
+ </div>
+ <div class="weather section">
+   <div class="container my-5">
+     <h1 class="text-center title">Weather in</h1>
+     <form class="search-loaction">
+       <input
+        type="text"
+        name="city"
+        placeholder="What city?"
+        autocomplete="off"
+        class="form-control text-muted form-rounded p-4 shadow-sm"
+        />
+     </form>
+     <div class="card rounded my-3 shadow-lg d-none back-card">
+       <div class="card-top text-center">
+         <div class="city-name my-3">
+            <p>Abuja</p>
+            <span>...</span>
+         </div>
+          <img src="img/night_image.svg" alt="" class="card-img-top time" />
+       </div>
+       <div class="card-body">
+          <div class="card-mid row">
+            <div class="col-8 text-center temp">
+              <span>30&deg;C</span>
+            </div>
+            <div class="col-4 condition-temp">
+              <p class="condition">Thunder Storm</p>
+              <p class="high">30&deg;C</p>
+              <p class="low">27&deg;C</p>
+            </div>
+          </div>
+
+          <div class="icon-container card shadow mx-auto">
+            <img src="img/cloud.svg" alt="" />
+          </div>
+          <div class="card-bottom px-5 py-4 row">
+            <div class="col text-center">
+              <p>30&deg;C</p>
+              <span>Feels Like</span>
+            </div>
+            <div class="col text-center">
+              <p>55%</p>
+              <span>Humidity</span>
+            </div>
+            <div class="col text-center"> 
+             <p>10%</p>
+             <span>Precipitation</span>
+            </div>
+          </div>
+       </div>
+     </div>
+   </div>
+ </div>
+  <script src="Weather plugin/request.js"></script>
+  <script src="Weather plugin/index.js"></script>
+</body>
+</html>

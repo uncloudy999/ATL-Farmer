@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+#home{
+	background-image:  url(../Images/home.jpg);
+	height: 110vh;
+	background-size: cover;
+	background-position: 0px 100px;
+	font-family: 'Roboto', sans-serif;
+
+
+}
+
+.nav-bar{
+	background-color: #0D0D0D;
+	display: flex;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	padding: 15px 30px;
+}
+
+.nav-logo img{
+	width: 100px;	
+}
+
+
+
+.nav-links ul{
+	display: inline;
+	margin-left: 550px;	
+	
+}
+
+.nav-links ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px 30px;
+	margin-top: 55px;
+	margin-right: 7.5px; 
+	font-size: 20px;
+}
+
+.nav-links ul a{
+	color: #fff;
+	font-size: 25px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nav-links ul li::after{
+	content: "";
+	width: 100%;
+	height: 5px;
+	background: yellow;
+	display: block;
+	margin: auto;
+	margin-top: 0.5px;
+	transition: .5s ease;
+	border: 0px solid yellow;
+	border-radius: 5px;
+}
+
+.nav-links ul li:hover::after{
+	width: 0%;
+	transition: 0.3s ease;
+}
+
+ul li:hover{
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+	transition: .7s ease;
+	height: 40px;
+}
+
+
+
+
+section{
+	width: 100%;
+	height: 100vh;
+	float: left;
+	position: relative;
+}
+
+.trending{
+	position: absolute;
+	top: 21.5%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	font-size: 27px;
+	color:white;
+}
+
+.trending span{
+	color: yellow;
+}
+
+.h1underline{
+	text-decoration: underline;
+	text-underline-offset: 8px;
+	text-decoration-color: yellow;
+}	
+
+.slider{
+	overflow: hidden;
+	position: absolute;
+	width: 800px;
+	top: 63%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 1px 2px 5px 2px rgb(255, 255, 255);
+	
+}
+
+.slider figure{
+	position: relative;
+	width: 400%;
+	margin: 0;
+	left: 0;
+	animation: 30s slider infinite;
+}
+
+.slider figure img{
+	width: 25%;
+	float: left;
+}
+
+@keyframes slider{
+	0% {
+		left: 0;
+	}
+	25% {
+		left: 0;
+	}
+	40% {
+		left: -100%;
+	}
+	60% {
+		left: -100%;
+	}
+	75% {
+		left: -200%;
+	}
+	85% {
+		left: -200%;
+	}
+	100% {
+		left: -300%;
+	}
+}
+.center{
+     margin-left: auto;
+     margin-right: auto;
+	 position: relative;
+}
+
